@@ -27,6 +27,7 @@ const withPWA = pwa({
 export default defineNextConfig(withPWA(withTM({
   reactStrictMode: true,
   swcMinify: true,
+  output: "standalone",
   // Next.js i18n docs: https://nextjs.org/docs/advanced-features/i18n-routing
   i18n: {
     locales: ["en"],
